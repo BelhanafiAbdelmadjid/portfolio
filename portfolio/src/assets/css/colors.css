@@ -1,0 +1,13 @@
+:root {
+    --dark-gray : #333333;
+    --primary-color : rgb(1,9,60);
+    --light-brown: #E8E1D9;
+    
+    --small-text-size: 13px;
+    --medieum-text-size: 26px;
+    --big-text-size: 56px;
+  
+    --small-text-size-mobile : 10px;
+    --medieum-text-size-mobile: 16px;
+    --big-text-size-mobile: 36px;
+  }

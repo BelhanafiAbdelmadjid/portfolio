@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth;
+}
+*::selection{
+    background-color: var(--light-text-color);
+    color: var(--dark-text-color);
+}

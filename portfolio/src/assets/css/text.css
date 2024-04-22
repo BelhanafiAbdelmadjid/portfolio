@@ -1,0 +1,12 @@
+.big-titel{
+    color:var( --light-brown);
+    font-size: 40px;
+}
+@media (max-width: 600px) {
+    .big-titel {
+        font-size: 30px;
+
+    }
+
+
+}

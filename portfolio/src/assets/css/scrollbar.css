@@ -1,0 +1,37 @@
+
+.scrollbar-element::-webkit-scrollbar {
+    width: 5px; 
+}
+
+/* Track */
+.scrollbar-element::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+.scrollbar-element::-webkit-scrollbar-thumb {
+    background: var(--light-brown); 
+    border-radius: 10px; 
+}
+
+
+
+
+
+
+
+
+html::-webkit-scrollbar {
+    width: 5px; 
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+    background: var( --dark-gray); 
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+    background: var(--light-brown); 
+    border-radius: 10px; 
+}
