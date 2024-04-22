@@ -52,13 +52,7 @@ export default{
         distance: '500px',
         easing: 'ease-in-out',
         });
-        const sr4 = ScrollReveal();
-        sr4.reveal('.mockups', {
-        duration:600,
-        origin: 'right',
-        distance: '500px',
-        easing: 'ease-in-out',
-        });
+       
     }
 }
 </script>
@@ -107,9 +101,10 @@ export default{
 .one-work .mockups{
     width: 100%;
 
-    min-height: 600px;
+    min-height: auto;
     max-height: 600px;
     overflow-y: auto;
+    overflow-x: hidden;
 
     border-radius: 7px;
 
@@ -119,7 +114,7 @@ export default{
     justify-content: flex-start;
 
     gap: 24px;
-    padding: 24px;
+    padding: 50px;
     box-sizing: border-box;
    
     background-color: #333333;
@@ -129,13 +124,18 @@ export default{
 .one-work .mockups .mockup{
 
     width: 100%;
-    min-height: 550px;
-
-    background-color: red;
+    min-height: auto;
 
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
+
+    border-radius: 14px;
+}
+.one-work .mockups img{
+
+    width: 100%;
+    height: auto;
 
     border-radius: 14px;
 }
@@ -173,7 +173,13 @@ export default{
 
     width: 100%;
 }
+@media (max-width: 600px) {
+    .one-work .mockups{
+        padding: 16px;
+    }
+}
 @media (max-width: 1200px) {
+    
     .one-work{
         flex-direction: column;
         gap: 50px;

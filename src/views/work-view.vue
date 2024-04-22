@@ -20,7 +20,8 @@
                 <a href="https://mafaldental.netlify.app/" target="_blank" class="line-value" >mafaldental.netlify.app</a>
             </template>
             <template #mockups>
-                <div :style="{backgroundImage : `url(${mafal})`}" class="mockup"></div>
+                <!-- <div :style="{backgroundImage : `url(${mafal})`}" class="mockup"></div> -->
+                <img class="mockup-image" :src="mafal" alt="mockup-mafal-dental-clinique">
             </template>
             
         </workSection>
@@ -47,6 +48,14 @@ export default{
         duration:600,
         origin: 'bottom',
         distance: '150px',
+        easing: 'ease-in-out',
+        });
+        
+        const sr4 = ScrollReveal();
+        sr4.reveal('.mockup-image', {
+        duration:1000,
+        origin: 'right',
+        distance: '500px',
         easing: 'ease-in-out',
         });
        

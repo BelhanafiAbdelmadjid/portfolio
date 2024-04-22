@@ -113,6 +113,8 @@ export default {
     box-sizing: border-box;
 
     color: var(--light-brown);
+
+    white-space: nowrap;
 }
 
 .bottom-line .social-media {
@@ -137,6 +139,33 @@ export default {
     .bottom-line {
         font-size: 14px;
         padding: 15px var(--border-phone) 15px var(--border-phone);
+    }
+}
+@media (max-width: 400px) {
+    .landing-div {
+        font-size: 24px;
+
+    }
+
+    .bottom-line {
+        font-size: 12px;
+        padding: 15px var(--border-phone) 15px var(--border-phone);
+    }
+}
+@media (max-width: 350px) {
+    .landing-div {
+        font-size: 20px;
+
+    }
+
+    .bottom-line {
+        font-size: 10px;
+        padding: 15px var(--border-phone) 15px var(--border-phone);
+    }
+}
+@media (max-width: 300px) {
+    .landing-div {
+        font-size: 20px;
     }
 }
 </style>
