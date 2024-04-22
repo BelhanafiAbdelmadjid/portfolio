@@ -10,8 +10,9 @@
                 Mafal dental    
             </template>
             <template #projectDescription >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quo, quidem numquam consectetur sequi modi aut magni reprehenderit,
-                eaque facilis odio adipisci est, repudiandae laudantium? Quas suscipit officia veritatis? Reiciendis?
+                Mafal Dental is a newly established dental clinic, founded in 2023. As a web developer, 
+                it was my responsibility to contribute to its growth by creating a showcase page. This page allows clients to access comprehensive information about
+                the clinic and showcases the services they provide through an intuitive UI/UX design.
             </template>
             <template #Role >
                 Front-end developer
@@ -20,7 +21,6 @@
                 <a href="https://mafaldental.netlify.app/" target="_blank" class="line-value" >mafaldental.netlify.app</a>
             </template>
             <template #mockups>
-                <!-- <div :style="{backgroundImage : `url(${mafal})`}" class="mockup"></div> -->
                 <img class="mockup-image" :src="mafal" alt="mockup-mafal-dental-clinique">
             </template>
             
