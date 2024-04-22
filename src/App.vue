@@ -1,8 +1,7 @@
 <template>  
   <mainLayout>
     <template #content >
-        <landing/>
-        <work/>
+        <Router-view></Router-view>
       </template>
     </mainLayout>
 </template>
@@ -10,14 +9,10 @@
 <script>
 import mainLayout from "./layout/main-layout.vue"
 
-import landing from "./views/landing-view.vue"
-import work from "./views/work-view.vue"
 export default {
   name: 'App',
   components: {
     mainLayout,
-    landing,
-    work,
   }
 }
 </script>
