@@ -1,13 +1,19 @@
+
 <template>
     <section class="about">
-        <div class="my-picture" >
-
+        <h1 id="about" class="big-titel" >About me</h1>
+        <div class="content-about">
+            <div class="my-picture"></div>
+            
+            <p>
+                <span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusamus expedita aspernatur pariatur quaerat modi? Consectetur quo voluptatum soluta placeat quae laudantium aliquid tempore nisi. Molestias ducimus voluptate ad labore officia, fugiat corporis nobis blanditiis hic? 
+                </span>
+                <span>
+                    Ab reprehenderit vel laudantium, enim maxime minus culpa doloribus reiciendis consectetur est, inventore aspernatur.
+                </span>
+            </p>
         </div>
-        <h1>About me</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex minus voluptas, numquam unde ea ullam eveniet reiciendis consequatur doloribus odit praesentium beatae explicabo pariatur porro dolore quisquam! Sint, tempora. Dolorem itaque praesentium cumque repellat sit numquam, a ipsam dolores provident sapiente odit quis eveniet accusantium earum facilis enim maiores optio corporis voluptas ratione consectetur nihil laboriosam voluptatem? Voluptatem vel eos dicta alias quidem iure quo eligendi magni, repellendus dolorum dignissimos nemo expedita neque deserunt nostrum hic blanditiis deleniti. Fuga excepturi iusto repellat veritatis enim. Quam ad natus odit maiores. Est placeat porro voluptatibus dignissimos eius. Quas consequatur explicabo ducimus repellendus consectetur sit, quis inventore vel nostrum voluptatem praesentium fugit dolorum similique, reprehenderit, vero omnis labore culpa dolor quia eveniet blanditiis quae. Doloribus, consequatur. Possimus, 
-            ab minima deserunt quisquam excepturi velit beatae numquam minus adipisci repellendus esse accusamus maiores magnam id nobis animi fugiat nihil odit voluptas ut eaque, repellat similique.
-        </p>
     </section>
 </template>
 <script>
@@ -19,11 +25,105 @@ export default{
 .about{
     position: relative;
     min-height: 400px;
-    height: 85vh;
+    height: calc(100vh - var(--main-nav-bar-height));
     width: 100%;
 
-    margin-top: var(--main-nav-bar-height );
+    margin-top: var(--main-nav-bar-height);
 
-    background-color: red;
+    display: block;
+    place-content: center;
+    /* row-gap: 25px; */
+
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+.about .my-picture{
+
+    filter: grayscale(0.6);
+    border-radius: 50%;
+
+    position: relative;
+    background-image: url('../assets/images/me/my_picture.jpeg');
+
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+
+    min-height: 300px;
+    min-width: 300px;
+
+}
+.about p{
+    font-size: 20px;
+    font-weight: 500;
+    color: var( --light-brown);
+    text-align: left;
+}
+.about h1{
+    margin-bottom: 50px;
+}
+.about .content-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    width: 100%;
+    min-height: 400px;
+}
+.about .content-about p{
+    width: 50%;
+
+    height: 100%;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+@media (max-width: 800px) {
+    .about{
+        margin-bottom: 50px;
+        min-height: 600px;
+
+        padding-left: 16px ;
+        padding-right: 16px ;
+    }
+    .about .content-about{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 24px;
+
+        width: 100%;
+    }
+    .about .content-about p{
+        width: 100%;
+
+        text-align: center;
+        font-size:16px;
+
+    }
+    .about h1{
+        margin-top: 50px;
+    }
+
+}
+@media (max-width: 400px) {
+
+    .about .my-picture{
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+
 }
 </style>

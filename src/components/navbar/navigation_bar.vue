@@ -1,8 +1,11 @@
 <template>
     <nav>
-        <h3 class="nav-name" >JIDSU</h3>
+        <h3 class="nav-name" >
+            <RouterLink :to="'/'" >JIDSU</RouterLink>
+        </h3>
         <h3 class="contact" >
             <a href="#contact">Hit me up!</a>
+            <RouterLink :to="'/about#about'" >About</RouterLink>
         </h3>
     </nav>
 </template>
@@ -59,12 +62,21 @@ nav h3 a{
     color: var(--light-brown);
     cursor: pointer;
 }
-
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
 @media (max-width: 600px) {
     nav{
         font-size: 18px;
         padding: 5px var(--border-phone) 5px var(--border-phone) ;
     }
+    .contact{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 }
 
 </style>

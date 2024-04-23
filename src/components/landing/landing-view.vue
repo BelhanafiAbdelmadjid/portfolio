@@ -3,8 +3,8 @@
         <p class="my-name" >
             JIDSU
         </p>
-        <h1 class="job-desc" >
-            <span style="white-space:wrap;">web developer</span>
+        <h1 class="job job-desc" >
+            <span>web developer</span>
         </h1>
         <h4 class="motivation" style="white-space:wrap;">here to craft simple and useful experiences.</h4>
         <div class="bottom-line">
@@ -67,9 +67,9 @@ export default {
 </script>
 
 <style scoped>
-.landing-div .my-name{
 
-}
+
+
 .landing-div {
 
     height: calc(100vh - var(--main-nav-bar-height));
@@ -89,7 +89,7 @@ export default {
     display: block;
     place-content: center;
 
-    padding: 0px 50px 0% 50px;
+    padding: 0px var(--border-padding) 0% var(--border-padding);
     box-sizing: border-box;
 
     text-align: center;
@@ -133,9 +133,10 @@ export default {
 }
 
 @media (max-width: 600px) {
+    
     .landing-div {
         font-size: 30px;
-
+        padding: 0px var(--border-phone) 0% var(--border-phone);
     }
 
     .bottom-line {
@@ -168,6 +169,11 @@ export default {
 @media (max-width: 300px) {
     .landing-div {
         font-size: 20px;
+    }
+}
+@media (max-width: 250px) {
+    .landing-div {
+        font-size: 16px;
     }
 }
 </style>
