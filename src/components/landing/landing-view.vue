@@ -24,9 +24,9 @@ import ScrollReveal from 'scrollreveal';
 <script>
 
 
-import github from "../components/svgs/github-icon.vue"
-import instagram from "../components/svgs/instagram-icon.vue"
-import linkedin from "../components/svgs/linkedin-icon.vue"
+import github from "../svgs/github-icon.vue"
+import instagram from "../svgs/instagram-icon.vue"
+import linkedin from "../svgs/linkedin-icon.vue"
 export default {
     components: {
         github,
@@ -81,11 +81,13 @@ export default {
     left: 0;
     margin-top: var(--main-nav-bar-height);
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: block;
+    place-content: center;
 
     padding: 0px 50px 0% 50px;
     box-sizing: border-box;

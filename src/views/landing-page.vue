@@ -3,8 +3,8 @@
     <workSection/>
 </template>
 <script>
-import landingView from "./landing-view.vue"
-import workSection from "./work-view.vue" 
+import landingView from "../components/landing/landing-view.vue"
+import workSection from "../components/work/work-view.vue" 
 export default{
     components : {
         landingView,
