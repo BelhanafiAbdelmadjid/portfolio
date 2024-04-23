@@ -7,6 +7,9 @@ import aboutMe from "./views/about-me.vue"
 const routes = [
     { path: '/', component: landingPage },
     { path: '/about', component: aboutMe },
+    { path: '/404', component: landingPage },  
+    { path: "/:catchAll(.*)", redirect: '/' },  
+  
   ]
 
 const router = createRouter({
