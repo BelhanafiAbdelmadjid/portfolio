@@ -7,10 +7,10 @@
             
             <p>
                 <span>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusamus expedita aspernatur pariatur quaerat modi? Consectetur quo voluptatum soluta placeat quae laudantium aliquid tempore nisi. Molestias ducimus voluptate ad labore officia, fugiat corporis nobis blanditiis hic? 
+                    I'm Abdelmadjid, a full-stack web developer from Algeria. Throughout my learning journey, I've gained a strong understanding of various tech stacks and their capabilities. This has placed me in a comfortable position when working on both front-end and back-end development, continually aiming to create elegant solutions that are both functional and visually appealing, all while adhering to technical constraints.    
                 </span>
                 <span>
-                    Ab reprehenderit vel laudantium, enim maxime minus culpa doloribus reiciendis consectetur est, inventore aspernatur.
+                    I'm passionate about building modern and innovative solutions. Every problem I encounter is a new challenge for me to tackle.
                 </span>
             </p>
         </div>
