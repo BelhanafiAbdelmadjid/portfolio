@@ -134,8 +134,8 @@ export default{
 }
 .one-work .mockups img{
 
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 500px;
 
     border-radius: 14px;
 }
