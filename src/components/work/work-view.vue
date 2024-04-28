@@ -54,8 +54,10 @@
 </template>
 <script setup>
 import ScrollReveal from 'scrollreveal';
+
 </script>
 <script>
+
 import workSection from "./one-work.vue"
 import mafal from '../../assets/images/projects/mafal-dental/mafal-dental-mockup.png'
 

@@ -123,8 +123,8 @@ export default{
 }
 .one-work .mockups .mockup{
 
-    width: 100%;
-    min-height: auto;
+    max-width: 100%;
+    min-height: 500px;
 
     background-size: cover; 
     background-position: center center; 
@@ -176,6 +176,16 @@ export default{
 @media (max-width: 600px) {
     .one-work .mockups{
         padding: 16px;
+    }
+
+}
+@media (max-width: 800px) {
+    .one-work .mockups img{
+
+        width: 100%;
+        height: auto;
+
+        border-radius: 14px;
     }
 }
 @media (max-width: 1200px) {
