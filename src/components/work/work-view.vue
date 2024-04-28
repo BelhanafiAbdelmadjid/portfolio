@@ -5,7 +5,7 @@
         </h1>
         <workSection
         :projectUrl="String()"
-        :Technologies="['Vue','JS']" >
+        :Technologies="['Vue']" >
             <template #projectName >
                 Mafal dental    
             </template>
@@ -25,6 +25,31 @@
             </template>
             
         </workSection>
+        <workSection
+        :projectUrl="String()"
+        :Technologies="['Django','Vue']" >
+            <template #projectName >
+                Vintagers    
+            </template>
+            <template #projectDescription >
+                Vintagers an e-commerce platform where I've combined Django and Vue.js
+                to provide users with a smooth experience. It includes account creation with email verification,
+                article ordering via a cart feature, and order tracking.
+            </template>
+            <template #Role >
+                Full stack developer
+            </template>
+            <template #projectUrl >
+                <!-- <a href="https://mafaldental.netlify.app/" target="_blank" class="line-value" >mafaldental.netlify.app</a> -->
+                <p>not puslished yet! :/</p>
+            </template>
+            <template #mockups>
+                <img class="mockup-image" src="../../assets/images/projects/onlineShop/photo1.png" alt="mockup-mafal-dental-clinique">
+                <img class="mockup-image" src="../../assets/images/projects/onlineShop/Feature1.png" alt="mockup-mafal-dental-clinique">
+                <img class="mockup-image" src="../../assets/images/projects/onlineShop/features1.png" alt="mockup-mafal-dental-clinique">
+            </template>
+            
+        </workSection>
     </section>
 </template>
 <script setup>
@@ -33,6 +58,8 @@ import ScrollReveal from 'scrollreveal';
 <script>
 import workSection from "./one-work.vue"
 import mafal from '../../assets/images/projects/mafal-dental/mafal-dental-mockup.png'
+
+
 export default{
     data(){
         return{
