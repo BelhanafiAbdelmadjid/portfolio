@@ -6,7 +6,9 @@
 
             <p>
                 <span>
-                    
+                                
+            I'm Abdelmadjid, a full-stack web developer from Algeria. My passion for web development is increasing with every project I build. I started building web apps two years ago
+            and have always felt that my creativity has no limits, which has greatly helped me during these years.
                 </span>
                 <span>
                     I'm passionate about building modern and innovative solutions. Every problem I encounter is a new
